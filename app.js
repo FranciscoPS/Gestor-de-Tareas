@@ -11,7 +11,7 @@ const main = async () => {
     opt = await mostrarMenu();
     console.log({ opt });
 
-    await pausa();
+    if (opt !== "0") await pausa();
   } while (opt !== "0");
 
   // pausa();
