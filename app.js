@@ -1,8 +1,7 @@
 const { inquirerMenu, pausa } = require("./helpers/inquirer");
+const Tareas = require("./models/tareas");
 
 require("colors");
-
-console.clear();
 
 const main = async () => {
   let opt = "";
@@ -13,8 +12,6 @@ const main = async () => {
 
     await pausa();
   } while (opt !== "0");
-
-  // pausa();
 };
 
 main();
