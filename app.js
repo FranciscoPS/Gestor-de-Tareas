@@ -10,11 +10,9 @@ const main = async () => {
 
   const tareasDB = leerDB();
 
-  if(tareasDB){
-    console.log(tareasDB)
+  if (tareasDB) {
+    tareas.cargarTareasFromArray(tareasDB);
   }
-
-  await pausa();
 
   do {
     //Esta funcion imprime el menú
